@@ -30,5 +30,7 @@ int main () {
 
 	pthread_exit(NULL);
 
+	testFunction((void *) &threadId);
+
 	return 0;
 }
