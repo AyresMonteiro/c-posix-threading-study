@@ -42,7 +42,7 @@ int main () {
 	// first because you're waiting only the second script. It's like
 	// async/await in JavaScript, the difference is that JavaScript uses
 	// different events in the same process, and this program uses different
-	// process.
+	// processes.
 	waitpid(pid, &pid_status, 0);
 	
 	pid = forkAndTreatErrors();
